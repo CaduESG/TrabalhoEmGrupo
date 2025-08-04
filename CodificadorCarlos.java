@@ -1,5 +1,5 @@
 // Carlos Eduardo Griebeler
-public class CodificadorNovo implements Codificador {
+public class CodificadorCarlos implements Codificador {
     public int getNivelSeguranca(){
         return 10;
     }
