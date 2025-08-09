@@ -17,7 +17,7 @@ public class CodificadorSimples implements Codificador {
         StringBuilder encoded = new StringBuilder();
 
         for (char c : str.toCharArray()) {
-            encoded.append((char) (c + 3));
+            encoded.append((char) (c + 1));
         }
 
         return encoded.toString();
