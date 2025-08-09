@@ -22,7 +22,7 @@ public class CodificadorPedro implements Codificador {
                 char codificado = (char) ((c - base + 3) % 26 + base);
                 encoded.append(codificado);
             } else {
-                encoded.append(c); // mantém espaços e pontuação
+                encoded.append(c); 
             }
         }
 
@@ -38,7 +38,7 @@ public class CodificadorPedro implements Codificador {
                 char decodificado = (char) ((c - base - 3 + 26) % 26 + base);
                 encoded.append(decodificado);
             } else {
-                encoded.append(c); // mantém espaços e pontuação
+                encoded.append(c); 
             }
         }
 
