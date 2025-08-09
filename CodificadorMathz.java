@@ -1,9 +1,8 @@
-public class CodificadorMathz{
-    private String texto;
+
+import java.time.LocalDate;
+
+public class CodificadorMathz implements Codificador {
     
-    public CodificadorMathz(String texto){
-        this.texto = texto;
-    }
 
     public String codifica(String str) {
         StringBuilder encoded = new StringBuilder();
@@ -23,5 +22,20 @@ public class CodificadorMathz{
         }
         
         return encoded.toString();
+    }
+
+    @Override
+    public String getNome() {
+        return "Codificador Mathz";
+    }
+
+    @Override
+    public LocalDate getDataCriacao() {
+        return LocalDate.of(2025, 8, 9); // Data de criação fictícia
+    }
+
+    @Override
+    public int getNivelSeguranca() {
+        return 5;
     }
 }
